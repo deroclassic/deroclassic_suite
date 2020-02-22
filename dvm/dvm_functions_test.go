@@ -20,7 +20,7 @@ package dvm
 import "reflect"
 import "testing"
 
-import "github.com/deroproject/derosuite/crypto"
+import "github.com/deroclassic/deroclassic_suite/crypto"
 
 // ensure 100% coverage of functions execution
 var execution_tests_functions = []struct {

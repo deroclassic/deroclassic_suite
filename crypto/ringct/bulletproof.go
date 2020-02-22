@@ -20,7 +20,7 @@ import "fmt"
 import "math/big"
 import "encoding/binary"
 
-import "github.com/deroproject/derosuite/crypto"
+import "github.com/deroclassic/deroclassic_suite/crypto"
 
 // see the  references such as original paper and multiple implementations
 // https://eprint.iacr.org/2017/1066.pdf

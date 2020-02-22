@@ -36,12 +36,12 @@ import log "github.com/sirupsen/logrus"
 import "github.com/paulbellamy/ratecounter"
 import "github.com/vmihailenco/msgpack"
 
-import "github.com/deroproject/derosuite/config"
+import "github.com/deroclassic/deroclassic_suite/config"
 
-//import "github.com/deroproject/derosuite/crypto"
-import "github.com/deroproject/derosuite/globals"
+//import "github.com/deroclassic/deroclassic_suite/crypto"
+import "github.com/deroclassic/deroclassic_suite/globals"
 
-//import "github.com/deroproject/derosuite/blockchain"
+//import "github.com/deroclassic/deroclassic_suite/blockchain"
 
 // This file defines  what all needs to be responded to become a server ( handling incoming requests)
 

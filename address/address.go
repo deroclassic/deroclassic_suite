@@ -20,8 +20,8 @@ import "fmt"
 import "bytes"
 import "encoding/binary"
 
-import "github.com/deroproject/derosuite/config"
-import "github.com/deroproject/derosuite/crypto"
+import "github.com/deroclassic/deroclassic_suite/config"
+import "github.com/deroclassic/deroclassic_suite/crypto"
 
 // see https://cryptonote.org/cns/cns007.txt to understand address more
 

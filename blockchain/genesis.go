@@ -20,12 +20,12 @@ import "encoding/hex"
 
 import "github.com/romana/rlog"
 
-//import "github.com/deroproject/derosuite/address"
-import "github.com/deroproject/derosuite/crypto"
-import "github.com/deroproject/derosuite/block"
-import "github.com/deroproject/derosuite/globals"
+//import "github.com/deroclassic/deroclassic_suite/address"
+import "github.com/deroclassic/deroclassic_suite/crypto"
+import "github.com/deroclassic/deroclassic_suite/block"
+import "github.com/deroclassic/deroclassic_suite/globals"
 
-//import "github.com/deroproject/derosuite/config"
+//import "github.com/deroclassic/deroclassic_suite/config"
 
 /*
 func Create_Miner_Transaction(height uint64, median_size uint64, already_generated_coins uint64,

@@ -28,24 +28,24 @@ Traditional Blockchains process blocks as single unit of computation(if a double
 ## Downloads
 | Operating System | Download                                 |
 | ---------------- | ---------------------------------------- |
-| Windows 32       | https://github.com/deroproject/derosuite/releases |
-| Windows 64       | https://github.com/deroproject/derosuite/releases |
-| Mac 10.8 & Later | https://github.com/deroproject/derosuite/releases |
-| Linux 32         | https://github.com/deroproject/derosuite/releases |
-| Linux 64         | https://github.com/deroproject/derosuite/releases |
-| OpenBSD 64       | https://github.com/deroproject/derosuite/releases |
-| FreeBSD 64       | https://github.com/deroproject/derosuite/releases |
-| Linux ARM 64     | https://github.com/deroproject/derosuite/releases |
-| More Builds      | https://github.com/deroproject/derosuite/releases |
+| Windows 32       | https://github.com/deroclassic/deroclassic_suite/releases |
+| Windows 64       | https://github.com/deroclassic/deroclassic_suite/releases |
+| Mac 10.8 & Later | https://github.com/deroclassic/deroclassic_suite/releases |
+| Linux 32         | https://github.com/deroclassic/deroclassic_suite/releases |
+| Linux 64         | https://github.com/deroclassic/deroclassic_suite/releases |
+| OpenBSD 64       | https://github.com/deroclassic/deroclassic_suite/releases |
+| FreeBSD 64       | https://github.com/deroclassic/deroclassic_suite/releases |
+| Linux ARM 64     | https://github.com/deroclassic/deroclassic_suite/releases |
+| More Builds      | https://github.com/deroclassic/deroclassic_suite/releases |
 
 
 ### Build from sources:
-In go workspace: **go get -u github.com/deroproject/derosuite/...**
+In go workspace: **go get -u github.com/deroclassic/deroclassic_suite/...**
 
 Check bin folder for derod, explorer and wallet  binaries. Use golang-1.10.3 version minimum.
 
 ### DERO Quickstart
-1. Choose your Operating System and [download Dero software](https://github.com/deroproject/derosuite/releases)
+1. Choose your Operating System and [download Dero software](https://github.com/deroclassic/deroclassic_suite/releases)
 2. Extract the file and change to extracted folder in cmd prompt.
 3. Start derod daemon and wait to fully sync till prompt goes green.
 4. Open new cmd prompt and run dero-wallet-cli.
@@ -88,12 +88,12 @@ For specific details of current DERO core (daemon) implementation and capabiliti
 20.  **Enhanced Reliability, Privacy, Security, Useability, Portabilty assured.** For discussion on each point how pls visit forum.
 
 ## Crypto
-Secure and fast crypto is the basic necessity of this project and adequate amount of time has been devoted to develop/study/implement/audit it. Most of the crypto such as ring signatures have been studied by various researchers and are in production by number of projects. As far as the Bulletproofs are considered, since DERO is the first one to implement/deploy, they have been given a more detailed look. First, a bare bones bulletproofs was implemented, then implementations in development were studied (Benedict Bunz,XMR, Dalek Bulletproofs) and thus improving our own implementation.Some new improvements were discovered and implemented (There are number of other improvements which are not explained here). Major improvements are in the Double-Base Double-Scalar Multiplication while validating bulletproofs. A typical bulletproof takes ~15-17 ms to verify. Optimised bulletproofs takes ~1 to ~2 ms(simple bulletproof, no aggregate/batching). Since, in the case of bulletproofs the bases are fixed, we can use precompute table to convert 64*2 Base Scalar multiplication into doublings and additions (NOTE: We do not use Bos-Coster/Pippienger methods). This time can be again easily decreased to .5 ms with some more optimizations.With batching and aggregation, 5000 range-proofs (~2500 TX) can be easily verified on even a laptop. The implementation for bulletproofs is in github.com/deroproject/derosuite/crypto/ringct/bulletproof.go , optimized version is in github.com/deroproject/derosuite/crypto/ringct/bulletproof_ultrafast.go
+Secure and fast crypto is the basic necessity of this project and adequate amount of time has been devoted to develop/study/implement/audit it. Most of the crypto such as ring signatures have been studied by various researchers and are in production by number of projects. As far as the Bulletproofs are considered, since DERO is the first one to implement/deploy, they have been given a more detailed look. First, a bare bones bulletproofs was implemented, then implementations in development were studied (Benedict Bunz,XMR, Dalek Bulletproofs) and thus improving our own implementation.Some new improvements were discovered and implemented (There are number of other improvements which are not explained here). Major improvements are in the Double-Base Double-Scalar Multiplication while validating bulletproofs. A typical bulletproof takes ~15-17 ms to verify. Optimised bulletproofs takes ~1 to ~2 ms(simple bulletproof, no aggregate/batching). Since, in the case of bulletproofs the bases are fixed, we can use precompute table to convert 64*2 Base Scalar multiplication into doublings and additions (NOTE: We do not use Bos-Coster/Pippienger methods). This time can be again easily decreased to .5 ms with some more optimizations.With batching and aggregation, 5000 range-proofs (~2500 TX) can be easily verified on even a laptop. The implementation for bulletproofs is in github.com/deroclassic/deroclassic_suite/crypto/ringct/bulletproof.go , optimized version is in github.com/deroclassic/deroclassic_suite/crypto/ringct/bulletproof_ultrafast.go
 
 There are other optimizations such as base-scalar multiplication could be done in less than a microsecond. Some of these optimizations are not yet deployed and may be deployed at a later stage.
 
 ###  About Dero Rocket Bulletproofs
- - Dero ultrafast bulletproofs optimization techniques in the form used did not exist anywhere in publicly available cryptography literature at the time of implementation. Please contact for any source/reference to include here if it exists.  Ultrafast optimizations verifies Dero bulletproofs 10 times faster than other/original bulletproof implementations. See: https://github.com/deroproject/derosuite/blob/master/crypto/ringct/bulletproof_ultrafast.go
+ - Dero ultrafast bulletproofs optimization techniques in the form used did not exist anywhere in publicly available cryptography literature at the time of implementation. Please contact for any source/reference to include here if it exists.  Ultrafast optimizations verifies Dero bulletproofs 10 times faster than other/original bulletproof implementations. See: https://github.com/deroclassic/deroclassic_suite/blob/master/crypto/ringct/bulletproof_ultrafast.go
 
  - DERO rocket bulletproof implementations are hardened, which protects DERO from certain class of attacks.  
 

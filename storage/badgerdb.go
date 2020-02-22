@@ -31,7 +31,7 @@ import "github.com/dgraph-io/badger"
 import log "github.com/sirupsen/logrus"
 import "github.com/dgraph-io/badger/options"
 
-import "github.com/deroproject/derosuite/globals"
+import "github.com/deroclassic/deroclassic_suite/globals"
 
 type BadgerDBStore struct {
 	DB         *badger.DB

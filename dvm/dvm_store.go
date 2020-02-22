@@ -18,7 +18,7 @@ package dvm
 
 import "fmt"
 import "encoding/binary"
-import "github.com/deroproject/derosuite/crypto"
+import "github.com/deroclassic/deroclassic_suite/crypto"
 
 const DVAL = "DERO_BALANCE" // DERO Values are stored in this variable
 const CHANGELOG = "CHANGELOG"

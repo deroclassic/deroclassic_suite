@@ -10,13 +10,13 @@ ABSDIR=$(dirname $ABSPATH)
 cd $ABSDIR/../../../../
 GOPATH=`pwd`
 
-version=`cat src/github.com/deroproject/derosuite/config/version.go  | grep -i version |cut -d\" -f 2`
+version=`cat src/github.com/deroclassic/deroclassic_suite/config/version.go  | grep -i version |cut -d\" -f 2`
 
 
 cd $CURDIR
-bash $ABSDIR/build_package.sh "github.com/deroproject/derosuite/cmd/derod"
-bash $ABSDIR/build_package.sh "github.com/deroproject/derosuite/cmd/explorer"
-bash $ABSDIR/build_package.sh "github.com/deroproject/derosuite/cmd/dero-wallet-cli"
+bash $ABSDIR/build_package.sh "github.com/deroclassic/deroclassic_suite/cmd/derod"
+bash $ABSDIR/build_package.sh "github.com/deroclassic/deroclassic_suite/cmd/explorer"
+bash $ABSDIR/build_package.sh "github.com/deroclassic/deroclassic_suite/cmd/dero-wallet-cli"
 cd "${ABSDIR}/build"
 
 #windows users require zip files

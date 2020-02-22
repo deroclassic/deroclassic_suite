@@ -20,7 +20,7 @@ import "fmt"
 import "testing"
 import "encoding/hex"
 
-import "github.com/deroproject/derosuite/crypto"
+import "github.com/deroclassic/deroclassic_suite/crypto"
 
 // parse the tx and verify
 func Test_Genesis_Tx(t *testing.T) {

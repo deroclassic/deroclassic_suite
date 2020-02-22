@@ -27,11 +27,11 @@ import "encoding/binary"
 import "github.com/ebfe/keccak"
 import "github.com/romana/rlog"
 
-import "github.com/deroproject/derosuite/crypto"
+import "github.com/deroclassic/deroclassic_suite/crypto"
 
-//import "github.com/deroproject/derosuite/config"
-import "github.com/deroproject/derosuite/cryptonight"
-import "github.com/deroproject/derosuite/transaction"
+//import "github.com/deroclassic/deroclassic_suite/config"
+import "github.com/deroclassic/deroclassic_suite/cryptonight"
+import "github.com/deroclassic/deroclassic_suite/transaction"
 
 // these are defined  in file
 //https://github.com/monero-project/monero/src/cryptonote_basic/cryptonote_basic.h

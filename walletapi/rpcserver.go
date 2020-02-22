@@ -32,9 +32,9 @@ import "encoding/base64"
 import "github.com/intel-go/fastjson"
 import "github.com/osamingo/jsonrpc"
 
-import "github.com/deroproject/derosuite/globals"
-import "github.com/deroproject/derosuite/structures"
-//import "github.com/deroproject/derosuite/transaction"
+import "github.com/deroclassic/deroclassic_suite/globals"
+import "github.com/deroclassic/deroclassic_suite/structures"
+//import "github.com/deroclassic/deroclassic_suite/transaction"
 
 // all components requiring access to wallet must use , this struct to communicate
 // this structure must be update while mutex

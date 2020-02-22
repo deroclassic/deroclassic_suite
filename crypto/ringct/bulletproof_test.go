@@ -24,7 +24,7 @@ import "runtime/pprof"
 //import "math/big"
 //import "encoding/binary"
 
-import "github.com/deroproject/derosuite/crypto"
+import "github.com/deroclassic/deroclassic_suite/crypto"
 
 func TestInverse(t *testing.T) {
 

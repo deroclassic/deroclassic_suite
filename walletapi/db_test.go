@@ -7,7 +7,7 @@ import "testing"
 
 //import "fmt"
 
-import "github.com/deroproject/derosuite/crypto"
+import "github.com/deroclassic/deroclassic_suite/crypto"
 
 // quick testing of wallet creation
 func Test_Wallet_DB(t *testing.T) {

@@ -20,7 +20,7 @@ package transaction
 import "testing"
 import "encoding/hex"
 
-import "github.com/deroproject/derosuite/crypto/ringct"
+import "github.com/deroclassic/deroclassic_suite/crypto/ringct"
 
 // test transaction from XMR testnet 0a65ce0098f48085fe2dce36773d696f98b334d1ca2a2510617843bd40600a8d
 func Test_Transaction_BP_Simple_Deserialisation_(t *testing.T) {

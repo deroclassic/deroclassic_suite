@@ -34,9 +34,9 @@ import "encoding/json"
 
 //import log "github.com/sirupsen/logrus"
 
-import "github.com/deroproject/derosuite/globals"
+import "github.com/deroclassic/deroclassic_suite/globals"
 
-//import "github.com/deroproject/derosuite/crypto"
+//import "github.com/deroclassic/deroclassic_suite/crypto"
 
 // This structure is used to do book keeping for the peer list and keeps other DATA related to peer
 // all peers are servers, means they have exposed a port for connections

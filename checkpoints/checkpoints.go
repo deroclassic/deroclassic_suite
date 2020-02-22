@@ -45,8 +45,8 @@ import "github.com/romana/rlog"
 import log "github.com/sirupsen/logrus"
 import "github.com/armon/go-radix"
 
-//import "github.com/deroproject/derosuite/crypto"
-import "github.com/deroproject/derosuite/globals"
+//import "github.com/deroclassic/deroclassic_suite/crypto"
+import "github.com/deroclassic/deroclassic_suite/globals"
 
 // this file handles and maintains checkpoints which are used by blockchain to skip some checks on known parts of the chain
 // the skipping of the checks can be disabled by command line arguments

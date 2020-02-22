@@ -22,7 +22,7 @@ import "fmt"
 //import "encoding/binary"
 import "sync"
 
-import "github.com/deroproject/derosuite/crypto"
+import "github.com/deroclassic/deroclassic_suite/crypto"
 
 var Gi_Hi [maxN]crypto.PRECOMPUTE_TABLE
 var ultraonce sync.Once

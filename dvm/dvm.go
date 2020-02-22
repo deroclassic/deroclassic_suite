@@ -28,8 +28,8 @@ import "go/token"
 import "math"
 
 import "runtime/debug"
-import "github.com/deroproject/derosuite/crypto"
-import "github.com/deroproject/derosuite/address"
+import "github.com/deroclassic/deroclassic_suite/crypto"
+import "github.com/deroclassic/deroclassic_suite/address"
 
 type Vtype int
 

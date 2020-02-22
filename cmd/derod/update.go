@@ -21,8 +21,8 @@ import "github.com/blang/semver"
 import "github.com/miekg/dns"
 import "github.com/romana/rlog"
 
-import "github.com/deroproject/derosuite/config"
-import "github.com/deroproject/derosuite/globals"
+import "github.com/deroclassic/deroclassic_suite/config"
+import "github.com/deroclassic/deroclassic_suite/globals"
 
 /* this needs to be set on update.dero.io. as TXT record,  in encoded form as base64
  *

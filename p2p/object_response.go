@@ -27,12 +27,12 @@ import "time"
 import "github.com/romana/rlog"
 import "github.com/vmihailenco/msgpack"
 
-//import "github.com/deroproject/derosuite/crypto"
-//import "github.com/deroproject/derosuite/globals"
+//import "github.com/deroclassic/deroclassic_suite/crypto"
+//import "github.com/deroclassic/deroclassic_suite/globals"
 
-import "github.com/deroproject/derosuite/block"
-import "github.com/deroproject/derosuite/errormsg"
-import "github.com/deroproject/derosuite/transaction"
+import "github.com/deroclassic/deroclassic_suite/block"
+import "github.com/deroclassic/deroclassic_suite/errormsg"
+import "github.com/deroclassic/deroclassic_suite/transaction"
 
 // peer has responded with  some objects, we must respond
 func (connection *Connection) Handle_ObjectResponse(buf []byte) {

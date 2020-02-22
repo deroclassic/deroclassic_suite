@@ -23,10 +23,10 @@ import "encoding/hex"
 
 import "github.com/chzyer/readline"
 
-import "github.com/deroproject/derosuite/crypto"
-import "github.com/deroproject/derosuite/config"
-import "github.com/deroproject/derosuite/globals"
-import "github.com/deroproject/derosuite/walletapi"
+import "github.com/deroclassic/deroclassic_suite/crypto"
+import "github.com/deroclassic/deroclassic_suite/config"
+import "github.com/deroclassic/deroclassic_suite/globals"
+import "github.com/deroclassic/deroclassic_suite/walletapi"
 
 // display menu before a wallet is opened
 func display_easymenu_pre_open_command(l *readline.Instance) {

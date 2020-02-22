@@ -19,7 +19,7 @@ package dvm
 import "go/ast"
 import "strings"
 
-import "github.com/deroproject/derosuite/address"
+import "github.com/deroclassic/deroclassic_suite/address"
 
 // this files defines  external functions which can be called in DVM
 // for example to load and store data from the blockchain and other basic functions

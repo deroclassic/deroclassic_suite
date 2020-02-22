@@ -26,11 +26,11 @@ import "time"
 //import log "github.com/sirupsen/logrus"
 //import "github.com/vmihailenco/msgpack"
 
-import "github.com/deroproject/derosuite/crypto"
+import "github.com/deroclassic/deroclassic_suite/crypto"
 
-//import "github.com/deroproject/derosuite/globals"
+//import "github.com/deroclassic/deroclassic_suite/globals"
 
-import "github.com/deroproject/derosuite/block"
+import "github.com/deroclassic/deroclassic_suite/block"
 
 // if block request pool is empty, we are syncronised otherwise we are syncronising
 var block_request_pool = map[crypto.Hash]uint64{} // these are received, we must attach a connection to blacklist peers

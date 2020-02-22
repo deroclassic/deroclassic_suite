@@ -26,12 +26,12 @@ import "encoding/binary"
 //import log "github.com/sirupsen/logrus"
 import "github.com/golang/groupcache/lru"
 
-import "github.com/deroproject/derosuite/storage"
-import "github.com/deroproject/derosuite/block"
-import "github.com/deroproject/derosuite/crypto"
+import "github.com/deroclassic/deroclassic_suite/storage"
+import "github.com/deroclassic/deroclassic_suite/block"
+import "github.com/deroclassic/deroclassic_suite/crypto"
 
-//import "github.com/deroproject/derosuite/globals"
-import "github.com/deroproject/derosuite/transaction"
+//import "github.com/deroclassic/deroclassic_suite/globals"
+import "github.com/deroclassic/deroclassic_suite/transaction"
 
 /* this file implements the only interface which translates comands  to/from blockchain to storage layer *
  *

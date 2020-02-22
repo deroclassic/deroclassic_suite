@@ -42,12 +42,12 @@ import log "github.com/sirupsen/logrus"
 
 //import "github.com/vmihailenco/msgpack"
 
-//import "github.com/deroproject/derosuite/address"
+//import "github.com/deroclassic/deroclassic_suite/address"
 
-import "github.com/deroproject/derosuite/config"
-import "github.com/deroproject/derosuite/globals"
-import "github.com/deroproject/derosuite/walletapi"
-import "github.com/deroproject/derosuite/walletapi/mnemonics"
+import "github.com/deroclassic/deroclassic_suite/config"
+import "github.com/deroclassic/deroclassic_suite/globals"
+import "github.com/deroclassic/deroclassic_suite/walletapi"
+import "github.com/deroclassic/deroclassic_suite/walletapi/mnemonics"
 
 var command_line string = `dero-wallet-cli 
 DERO : A secure, private blockchain with smart-contracts

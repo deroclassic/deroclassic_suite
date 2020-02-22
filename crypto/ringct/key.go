@@ -20,7 +20,7 @@ package ringct
 //import "fmt"
 //import "crypto/rand"
 
-import "github.com/deroproject/derosuite/crypto"
+import "github.com/deroclassic/deroclassic_suite/crypto"
 
 // bothe the function resturn identity of the ed25519 curve
 func identity() (result *crypto.Key) {

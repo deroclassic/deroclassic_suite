@@ -30,10 +30,10 @@ import "time"
 import "github.com/romana/rlog"
 import "github.com/vmihailenco/msgpack"
 
-import "github.com/deroproject/derosuite/config"
-import "github.com/deroproject/derosuite/globals"
+import "github.com/deroclassic/deroclassic_suite/config"
+import "github.com/deroclassic/deroclassic_suite/globals"
 
-//import "github.com/deroproject/derosuite/blockchain"
+//import "github.com/deroclassic/deroclassic_suite/blockchain"
 
 // reads our data, length prefix blocks
 func (connection *Connection) Send_Handshake(request bool) {

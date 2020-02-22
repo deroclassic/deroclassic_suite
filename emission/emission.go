@@ -18,7 +18,7 @@ package emission
 
 import "fmt"
 import "math/big"
-import "github.com/deroproject/derosuite/config"
+import "github.com/deroclassic/deroclassic_suite/config"
 
 //TODO trickling code  is note implemented still, but we do NOT require it atleast for another 7-8 years
 

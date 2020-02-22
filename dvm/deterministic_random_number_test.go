@@ -20,7 +20,7 @@ package dvm
 //import "reflect"
 import "testing"
 
-import "github.com/deroproject/derosuite/crypto"
+import "github.com/deroclassic/deroclassic_suite/crypto"
 
 // run the test
 func Test_RND_execution(t *testing.T) {

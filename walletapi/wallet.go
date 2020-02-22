@@ -33,14 +33,14 @@ import "github.com/romana/rlog"
 import "github.com/vmihailenco/msgpack"
 //import "golang.org/x/crypto/salsa20/salsa"
 
-import "github.com/deroproject/derosuite/config"
-import "github.com/deroproject/derosuite/structures"
-import "github.com/deroproject/derosuite/crypto"
-import "github.com/deroproject/derosuite/crypto/ringct"
-import "github.com/deroproject/derosuite/globals"
-import "github.com/deroproject/derosuite/walletapi/mnemonics"
-import "github.com/deroproject/derosuite/address"
-import "github.com/deroproject/derosuite/blockchain/inputmaturity"
+import "github.com/deroclassic/deroclassic_suite/config"
+import "github.com/deroclassic/deroclassic_suite/structures"
+import "github.com/deroclassic/deroclassic_suite/crypto"
+import "github.com/deroclassic/deroclassic_suite/crypto/ringct"
+import "github.com/deroclassic/deroclassic_suite/globals"
+import "github.com/deroclassic/deroclassic_suite/walletapi/mnemonics"
+import "github.com/deroclassic/deroclassic_suite/address"
+import "github.com/deroclassic/deroclassic_suite/blockchain/inputmaturity"
 
 // used to encrypt payment id
 const ENCRYPTED_PAYMENT_ID_TAIL = 0x8d

@@ -17,7 +17,7 @@
 package ringct
 
 import "fmt"
-import "github.com/deroproject/derosuite/crypto"
+import "github.com/deroclassic/deroclassic_suite/crypto"
 
 /* this files handles the generation and verification in ringct full */
 

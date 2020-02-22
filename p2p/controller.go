@@ -39,10 +39,10 @@ import "runtime/debug"
 import "github.com/romana/rlog"
 import log "github.com/sirupsen/logrus"
 
-import "github.com/deroproject/derosuite/config"
-import "github.com/deroproject/derosuite/globals"
-import "github.com/deroproject/derosuite/blockchain"
-import "github.com/deroproject/derosuite/metrics"
+import "github.com/deroclassic/deroclassic_suite/config"
+import "github.com/deroclassic/deroclassic_suite/globals"
+import "github.com/deroclassic/deroclassic_suite/blockchain"
+import "github.com/deroclassic/deroclassic_suite/metrics"
 
 var chain *blockchain.Blockchain // external reference to chain
 

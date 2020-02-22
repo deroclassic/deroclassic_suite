@@ -25,7 +25,7 @@ import "context"
 import "github.com/intel-go/fastjson"
 import "github.com/osamingo/jsonrpc"
 
-import "github.com/deroproject/derosuite/crypto"
+import "github.com/deroclassic/deroclassic_suite/crypto"
 
 type On_GetBlockHash_Handler struct{}
 
