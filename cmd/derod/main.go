@@ -60,7 +60,7 @@ import "github.com/deroclassic/deroclassic_suite/walletapi"
 //import "github.com/deroclassic/deroclassic_suite/address"
 
 var command_line string = `derod 
-DERO : A secure, private blockchain with smart-contracts
+DERO Classic
 
 Usage:
   derod [--help] [--version] [--testnet] [--debug]  [--sync-node] [--boltdb | --badgerdb] [--disable-checkpoints] [--socks-proxy=<socks_ip:port>] [--data-dir=<directory>] [--p2p-bind=<0.0.0.0:18089>] [--add-exclusive-node=<ip:port>]... [--add-priority-node=<ip:port>]... 	 [--min-peers=<11>] [--rpc-bind=<127.0.0.1:9999>] [--lowcpuram] [--mining-address=<wallet_address>] [--mining-threads=<cpu_num>] [--node-tag=<unique name>]
@@ -77,8 +77,8 @@ Options:
   --disable-checkpoints  Disable checkpoints, work in truly async, slow mode 1 block at a time
   --socks-proxy=<socks_ip:port>  Use a proxy to connect to network.
   --data-dir=<directory>    Store blockchain data at this location
-  --rpc-bind=<127.0.0.1:9999>    RPC listens on this ip:port
-  --p2p-bind=<0.0.0.0:18089>    p2p server listens on this ip:port, specify port 0 to disable listening server
+  --rpc-bind=<127.0.0.1:20216>    RPC listens on this ip:port
+  --p2p-bind=<0.0.0.0:20213>    p2p server listens on this ip:port, specify port 0 to disable listening server
   --add-exclusive-node=<ip:port>	Connect to specific peer only 
   --add-priority-node=<ip:port>	Maintain persistant connection to specified peer
   --sync-node       Sync node automatically with the seeds nodes. This option is for rare use.
@@ -128,7 +128,7 @@ func main() {
 
 	rlog.Infof("Arguments %+v", globals.Arguments)
 
-	globals.Logger.Infof("DERO Atlantis daemon :  It is an alpha version, use it for testing/evaluations purpose only.")
+	globals.Logger.Infof("DERO Classic daemon :  It is an alpha version, use it for testing/evaluations purpose only.")
 
 	globals.Logger.Infof("Copyright 2017-2018 DERO Project. All rights reserved.")
 	globals.Logger.Infof("OS:%s ARCH:%s GOMAXPROCS:%d", runtime.GOOS, runtime.GOARCH, runtime.GOMAXPROCS(0))
@@ -275,6 +275,8 @@ func main() {
 					last_counter = counter
 					last_counter_time = time.Now()
 					switch {
+					case mining_speed > 1000000000:
+						mining_string = fmt.Sprintf("MINING %.1f GH/s", float32(mining_speed)/1000000000.0)
 					case mining_speed > 1000000:
 						mining_string = fmt.Sprintf("MINING %.1f MH/s", float32(mining_speed)/1000000.0)
 					case mining_speed > 1000:

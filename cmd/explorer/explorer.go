@@ -53,7 +53,7 @@ import "github.com/deroclassic/deroclassic_suite/structures"
 import "github.com/deroclassic/deroclassic_suite/proof"
 
 var command_line string = `dero_explorer
-DERO Atlantis Explorer: A secure, private blockchain with smart-contracts
+DERO Classic Explorer: A secure, private blockchain with smart-contracts
 
 Usage:
   dero_explorer [--help] [--version] [--debug] [--rpc-server-address=<127.0.0.1:18091>] [--http-address=<0.0.0.0:8080>] 
@@ -87,7 +87,7 @@ func main() {
 	}
 
 	log.Debugf("Arguments %+v", arguments)
-	log.Infof("DERO Atlantis Exporer :  This is under heavy development, use it for testing/evaluations purpose only")
+	log.Infof("DERO Classic Exporer :  This is under heavy development, use it for testing/evaluations purpose only")
 	log.Infof("Copyright 2017-2018 DERO Project. All rights reserved.")
 	endpoint = "127.0.0.1:30306"
 	if arguments["--rpc-server-address"] != nil {
@@ -533,7 +533,7 @@ func block_handler(w http.ResponseWriter, r *http.Request) {
 	// execute template now
 	data := map[string]interface{}{}
 
-	data["title"] = "DERO Atlantis BlockChain Explorer(v1)"
+	data["title"] = "DERO Classic BlockChain Explorer(v1)"
 	data["servertime"] = time.Now().UTC().Format("2006-01-02 15:04:05")
 	data["block"] = blinfo
 
@@ -602,7 +602,7 @@ func tx_handler(w http.ResponseWriter, r *http.Request) {
 	// execute template now
 	data := map[string]interface{}{}
 
-	data["title"] = "DERO Atlantis BlockChain Explorer(v1)"
+	data["title"] = "DERO Classic BlockChain Explorer(v1)"
 	data["servertime"] = time.Now().UTC().Format("2006-01-02 15:04:05")
 	data["info"] = info
 
@@ -642,7 +642,7 @@ func show_page(w http.ResponseWriter, page int) {
 	data := map[string]interface{}{}
 	var info structures.GetInfo_Result
 
-	data["title"] = "DERO Atlantis BlockChain Explorer(v1)"
+	data["title"] = "DERO Classic BlockChain Explorer(v1)"
 	data["servertime"] = time.Now().UTC().Format("2006-01-02 15:04:05")
 
 	t, err := template.New("foo").Parse(header_template + txpool_template + main_template + paging_template + footer_template + notfound_page_template)
@@ -722,7 +722,7 @@ func txpool_handler(w http.ResponseWriter, r *http.Request) {
 	data := map[string]interface{}{}
 	var info structures.GetInfo_Result
 
-	data["title"] = "DERO Atlantis BlockChain Explorer(v1)"
+	data["title"] = "DERO Classic BlockChain Explorer(v1)"
 	data["servertime"] = time.Now().UTC().Format("2006-01-02 15:04:05")
 
 	t, err := template.New("foo").Parse(header_template + txpool_template + main_template + paging_template + footer_template + txpool_page_template + notfound_page_template)

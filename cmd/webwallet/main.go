@@ -654,9 +654,9 @@ func main() {
 
 		if len(daemon_address) == 0 {
 			if globals.IsMainnet() {
-				daemon_address = "127.0.0.1:20206"
+				daemon_address = "127.0.0.1:20216"
 			} else {
-				daemon_address = "127.0.0.1:30306"
+				daemon_address = "127.0.0.1:30316"
 			}
 		}
 

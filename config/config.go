@@ -122,9 +122,9 @@ var Mainnet = CHAIN_CONFIG{Name: "mainnet",
 	Network_ID:                       uuid.FromBytesOrNil([]byte{0x59, 0xd7, 0xf7, 0xe9, 0xdd, 0x48, 0xd5, 0xfd, 0x13, 0x0a, 0xf6, 0xe0, 0x9a, 0x11, 0x22, 0x33}),
 	Public_Address_Prefix:            0xc8ed8, //for dERo  823000
 	Public_Address_Prefix_Integrated: 0xa0ed8, //for dERi  659160
-	P2P_Default_Port:                 20202,
-	RPC_Default_Port:                 20206,
-	Wallet_RPC_Default_Port:          20209,
+	P2P_Default_Port:                 20213,
+	RPC_Default_Port:                 20216,
+	Wallet_RPC_Default_Port:          20219,
 	Genesis_Nonce:                    10000,
 
 	Genesis_Block_Hash: crypto.HashHexToHash("e14e318562db8d22f8d00bd41c7938807c7ff70e4380acc6f7f2427cf49f474a"),
@@ -149,9 +149,9 @@ var Testnet = CHAIN_CONFIG{Name: "testnet", // testnet will always have last 3 b
 	Network_ID:                       uuid.FromBytesOrNil([]byte{0x59, 0xd7, 0xf7, 0xe9, 0xdd, 0x48, 0xd5, 0xfd, 0x13, 0x0a, 0xf6, 0xe0, 0x9a, 0x04, 0x00, 0x00}),
 	Public_Address_Prefix:            0x6cf58, // for dETo 446296
 	Public_Address_Prefix_Integrated: 0x44f58, // for dETi 282456
-	P2P_Default_Port:                 30303,
-	RPC_Default_Port:                 30306,
-	Wallet_RPC_Default_Port:          30309,
+	P2P_Default_Port:                 30313,
+	RPC_Default_Port:                 30316,
+	Wallet_RPC_Default_Port:          30319,
 	Genesis_Nonce:                    10001,
 
 	Genesis_Block_Hash: crypto.HashHexToHash("7be4a8f27bcadf556132dba38c2d3d78214beec8a959be17caf172317122927a"),

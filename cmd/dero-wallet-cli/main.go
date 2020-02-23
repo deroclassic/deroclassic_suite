@@ -50,7 +50,7 @@ import "github.com/deroclassic/deroclassic_suite/walletapi"
 import "github.com/deroclassic/deroclassic_suite/walletapi/mnemonics"
 
 var command_line string = `dero-wallet-cli 
-DERO : A secure, private blockchain with smart-contracts
+DERO Classic
 
 Usage:
   dero-wallet-cli [options] 
@@ -74,7 +74,7 @@ Usage:
   --socks-proxy=<socks_ip:port>  Use a proxy to connect to Daemon.
   --daemon-address=<host:port>    Use daemon instance at <host>:<port>
   --rpc-server      Run rpc server, so wallet is accessible using api
-  --rpc-bind=<127.0.0.1:20209>  Wallet binds on this ip address and port
+  --rpc-bind=<127.0.0.1:20219>  Wallet binds on this ip address and port
   --rpc-login=<username:password>  RPC server will grant access based on these credentials
   `
 var menu_mode bool = true // default display menu mode
@@ -109,7 +109,7 @@ func main() {
 
 	globals.Init_rlog()
 
-	globals.Arguments, err = docopt.Parse(command_line, nil, true, "DERO atlantis wallet : work in progress", false)
+	globals.Arguments, err = docopt.Parse(command_line, nil, true, "DERO Classic wallet : work in progress", false)
 	//globals.Arguments, err = docopt.ParseArgs(command_line, os.Args[1:],  "DERO daemon : work in progress")
 	if err != nil {
 		log.Fatalf("Error while parsing options err: %s\n", err)

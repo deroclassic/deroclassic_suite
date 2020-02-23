@@ -16,7 +16,7 @@
 
 package config
 
-var DNS_NOTIFICATION_ENABLED = true // will disable update notfications
+var DNS_NOTIFICATION_ENABLED = false // will disable update notfications
 
 const DNS_UPDATE_CHECK = "update.dero.io." // in dns form
 
