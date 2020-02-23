@@ -64,8 +64,8 @@ Options:
   -h --help     Show this screen.
   --version     Show version.
   --debug       Debug mode enabled, print log messages
-  --rpc-server-address=<127.0.0.1:18091>  connect to this daemon port as client
-  --http-address=<0.0.0.0:8080>    explorer listens on this port to serve user requests`
+  --rpc-server-address=<127.0.0.1:20216>  connect to this daemon port as client
+  --http-address=<0.0.0.0:8081>    explorer listens on this port to serve user requests`
 
 var rpcClient *jsonrpc.RPCClient
 var netClient *http.Client
@@ -89,7 +89,7 @@ func main() {
 	log.Debugf("Arguments %+v", arguments)
 	log.Infof("DERO Classic Exporer :  This is under heavy development, use it for testing/evaluations purpose only")
 	log.Infof("Copyright 2017-2018 DERO Project. All rights reserved.")
-	endpoint = "127.0.0.1:30306"
+	endpoint = "127.0.0.1:20216"
 	if arguments["--rpc-server-address"] != nil {
 		endpoint = arguments["--rpc-server-address"].(string)
 	}
