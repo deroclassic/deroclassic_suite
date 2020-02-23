@@ -122,7 +122,7 @@ var Mainnet = CHAIN_CONFIG{Name: "mainnet",
 	Network_ID:                       uuid.FromBytesOrNil([]byte{0x59, 0xd7, 0xf7, 0xe9, 0xdd, 0x48, 0xd5, 0xfd, 0x13, 0x0a, 0xf6, 0xe0, 0x9a, 0x11, 0x22, 0x33}),
 	Public_Address_Prefix:            0xc8ed8, //for dERo  823000
 	Public_Address_Prefix_Integrated: 0xa0ed8, //for dERi  659160
-	P2P_Default_Port:                 20213,
+	P2P_Default_Port:                 20212,
 	RPC_Default_Port:                 20216,
 	Wallet_RPC_Default_Port:          20219,
 	Genesis_Nonce:                    10000,

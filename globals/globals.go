@@ -144,10 +144,10 @@ func GetDataDirectory() string {
 	}
 
 	if IsMainnet() {
-		return filepath.Join(data_directory, "mainnet")
+		return filepath.Join(data_directory, "dero_classic_mainnet")
 	}
 
-	return filepath.Join(data_directory, "testnet")
+	return filepath.Join(data_directory, "dero_classic_testnet")
 }
 
 /* this function converts a logrus entry into a txt formater based entry with no colors  for tracing*/

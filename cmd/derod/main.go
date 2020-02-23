@@ -78,7 +78,7 @@ Options:
   --socks-proxy=<socks_ip:port>  Use a proxy to connect to network.
   --data-dir=<directory>    Store blockchain data at this location
   --rpc-bind=<127.0.0.1:20216>    RPC listens on this ip:port
-  --p2p-bind=<0.0.0.0:20213>    p2p server listens on this ip:port, specify port 0 to disable listening server
+  --p2p-bind=<0.0.0.0:20212>    p2p server listens on this ip:port, specify port 0 to disable listening server
   --add-exclusive-node=<ip:port>	Connect to specific peer only 
   --add-priority-node=<ip:port>	Maintain persistant connection to specified peer
   --sync-node       Sync node automatically with the seeds nodes. This option is for rare use.
