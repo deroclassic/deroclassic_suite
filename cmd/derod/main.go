@@ -131,6 +131,7 @@ func main() {
 	globals.Logger.Infof("DERO Classic daemon :  It is an alpha version, use it for testing/evaluations purpose only.")
 
 	globals.Logger.Infof("Copyright 2017-2018 DERO Project. All rights reserved.")
+	globals.Logger.Infof("2020 Dero Community. Just some guys who really wan't smart contarcts on dero")
 	globals.Logger.Infof("OS:%s ARCH:%s GOMAXPROCS:%d", runtime.GOOS, runtime.GOARCH, runtime.GOMAXPROCS(0))
 	globals.Logger.Infof("Version v%s", config.Version.String())
 

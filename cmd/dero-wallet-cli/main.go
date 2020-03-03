@@ -151,6 +151,7 @@ func main() {
 	rlog.Infof("Arguments %+v", globals.Arguments)
 	globals.Logger.Infof("DERO Wallet : %s  This version is under heavy development, use it for testing/evaluations purpose only", config.Version.String())
 	globals.Logger.Infof("Copyright 2017-2018 DERO Project. All rights reserved.")
+	globals.Logger.Infof("2020 Dero Community. Just some guys who really wan't smart contarcts on dero")
 	globals.Logger.Infof("OS:%s ARCH:%s GOMAXPROCS:%d", runtime.GOOS, runtime.GOARCH, runtime.GOMAXPROCS(0))
 	globals.Logger.Infof("Wallet in %s mode", globals.Config.Name)
 
