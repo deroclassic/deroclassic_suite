@@ -22,6 +22,7 @@ package config
 // only version 2
 var Mainnet_seed_nodes = []string{
 	"90.177.15.191:20212",
+	"80.211.204.60:20212",
 }
 
 // some seed node for testnet
